@@ -10,7 +10,7 @@ class Game:
         self.window = Window("WORMS BITCH", self.window_width, self.window_height)
         self.event = Event()
         self.main_scene = MainScene(self)
-
+        self.current_scene = self.main_scene
         self.clock = pygame.time.Clock()
         self.delta = 0
         self.end = False # Set this attribute to True ton end the game.

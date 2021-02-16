@@ -30,3 +30,5 @@ class Player(Sprite):
             self.rect.y += speed
 
 
+    def collide_map(self):
+        pass
