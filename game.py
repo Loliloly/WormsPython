@@ -11,6 +11,7 @@ class Game:
         self.event = Event()
         self.main_scene = MainScene(self)
 
+        self.clock = pygame.time.Clock()
         self.delta = 0
         self.end = False # Set this attribute to True ton end the game.
 
@@ -31,7 +32,8 @@ class Game:
         self.window.update()
 
     def update_delta(self):
-        pass
+        self.delta = self.clock.tick(60)
+        
 
     def exit(self):
         pass

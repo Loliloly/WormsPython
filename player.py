@@ -14,9 +14,8 @@ class Player(Sprite):
         
 
     def update(self, event):
-        clock = pygame.time.Clock()
-        dt = clock.tick(60)
-        speed = 1 / float(dt)
+
+        speed = int(200 * self.game.delta/1000)
 
         if (event.player_left):
             self.rect.x -= speed
